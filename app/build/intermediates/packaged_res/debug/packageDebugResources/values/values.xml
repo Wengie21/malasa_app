@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="grey">#808080</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="AdoboDesc">Adobo is a popular Filipino dish made with meat, usually chicken or pork, marinated in vinegar, soy sauce, garlic, and spices. It is then simmered until tender and served with rice. The dish is known for its savory and tangy flavor, making it a favorite comfort food in the Philippines.</string>
+    <string name="KareKareStr">Kare-Kare</string>
+    <string name="Recipe">Recipes</string>
+    <string name="adoboStr">Adobo</string>
+    <string name="app_name">My Application</string>
+    <string name="bicolexpressStr">Bicol Express</string>
+    <string name="calderetaStr">Caldereta</string>
+    <string name="laingStr">Laing</string>
+    <string name="menudoStr">Menudo</string>
+    <string name="pinakbetStr">Pinakbet</string>
+    <string name="sinigangStr">Sinigang</string>
+    <string name="speak">Speak</string>
+    <string name="tinolaStr">Tinola</string>
+    <style name="Base.Theme.MyApplication" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.MyApplication" parent="Base.Theme.MyApplication"/>
+</resources>

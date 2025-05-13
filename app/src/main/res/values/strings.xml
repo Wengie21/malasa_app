@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="adoboStr">Adobo</string>
+    <string name="calderetaStr">Caldereta</string>
+    <string name="menudoStr">Menudo</string>
+    <string name="laingStr">Laing</string>
+    <string name="pinakbetStr">Pinakbet</string>
+    <string name="bicolexpressStr">Bicol Express</string>
+    <string name="sinigangStr">Sinigang</string>
+    <string name="tinolaStr">Tinola</string>
+    <string name="KareKareStr">Kare-Kare</string>
+    <string name="Recipe">Recipes</string>
+    <string name="AdoboDesc">Adobo is a popular Filipino dish made with meat, usually chicken or pork, marinated in vinegar, soy sauce, garlic, and spices. It is then simmered until tender and served with rice. The dish is known for its savory and tangy flavor, making it a favorite comfort food in the Philippines.</string>
+    <string name="speak">Speak</string>
 </resources>

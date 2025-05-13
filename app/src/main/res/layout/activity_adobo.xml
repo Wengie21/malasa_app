@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Adobo"
+    >
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/recipeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adoboStr"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/ingredientsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingredients"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/ingredients"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 1 kg chicken or pork, cut into pieces\n• 1/2 cup soy sauce\n• 1/2 cup vinegar\n• 1 head garlic, minced\n• 1 onion, sliced\n• 2-3 bay leaves\n• 1 tsp black peppercorns\n• Salt and pepper to taste"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/cookingTimeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cooking Time"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/cookingTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preparation Time: 15 minutes\nCooking Time: 1 hour\nTotal Time: 1 hour 15 minutes"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/instructionsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Instructions"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/instructions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. In a bowl, combine soy sauce, vinegar, garlic, onion, bay leaves, and peppercorns. Add the meat and marinate for at least 30 minutes.\n\n2. In a pot, heat oil over medium heat. Add the marinated meat and cook until browned.\n\n3. Add the marinade to the pot and bring to a boil. Reduce heat and simmer until the meat is tender.\n\n4. Season with salt and pepper to taste. Serve hot with rice."
+                android:textSize="16sp"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/floatingButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:height="50dp"
+                android:text="@string/speak"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemRippleColor="@color/grey" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
